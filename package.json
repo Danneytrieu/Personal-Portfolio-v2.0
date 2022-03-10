@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"parcel index.html",
+    "build":"parcel build index.html"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "locomotive-scroll": "^4.1.4"
   },
   "devDependencies": {
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.49.9"
   }
 }

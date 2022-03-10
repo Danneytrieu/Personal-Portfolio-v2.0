@@ -124,7 +124,7 @@ var global = arguments[3];
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Smooth = exports.Native = exports.default = void 0;
+exports.default = exports.Smooth = exports.Native = void 0;
 
 /* locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 function _classCallCheck(instance, Constructor) {
@@ -3328,7 +3328,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53037" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50219" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
