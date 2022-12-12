@@ -11,6 +11,7 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="1024" />
+    <link rel="shortcut icon" type="image/png" href="./image/favicon.png" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./base.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,18 +25,35 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
     <title>Danney Trieu || Portfolio</title>
   </head>
   <body>
-    <div data-scroll-container>
+    <div class="wrapper" data-scroll-container>
+      <!-- video modal -->
+      <section class="modal" >
+        
+        <div class="video-wrap">
+          <div class="close-btn" >X</div>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YF4WvWV5Hrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+      </section>
       <section id="header" data-scroll-section>
         <article id="images-container">
-          <h1 data-aos="fade-down" data-aos-duration="2000" data-scroll data-scroll-speed="-2" class="img-title">
-            DANNEY TRIEU
-          </h1>
+
+          <div class="title-wrap">
+            <h1 data-aos="fade-down" data-aos-duration="2000" data-scroll data-scroll-speed="-2" class="img-title">
+              DANNEY TRIEU
+            </h1>
+            <!-- <div class="play-btn illustration" data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="2000">
+              <img class="img-watchme" src="./image/watch-me.png" alt=""></div> -->
+          </div>
+
           <img
             class="img-bg overlay"
             src="./image/bg.png"
@@ -65,9 +83,9 @@
                   style="color: rgba(202, 202, 202, 0.6)"
                   data-width="80"
                 ></span>
-                <h3 class="quote-content">
-                  LEVELING UP <br />
-                  ONE DAY AT A TIME
+                <h3 class="quote-content inspiration-quote">
+                  Bring <span>inspiration</span> <br> to life
+                with code.
                 </h3>
                 <span
                   class="iconify"
@@ -76,9 +94,8 @@
                   data-width="80"
                 ></span>
               </div>
-              <h1 class="inspiration-quote" data-scroll data-scroll-speed="0.5">
-                And bring <span>inspiration</span> to life <br />
-                with code.
+              <h1 class="intro-quote" >
+                Full-Stack Developer | Web Developer
               </h1>
             </div>
             <span
@@ -97,8 +114,8 @@
             <div  class="card-container">
               <div class="card-img card-img-1"></div>
               <div class="card-content">
-                <div class="card-title">Project 1</div>
-                <span class="card-text">HTML/CSS</span>
+                <div class="card-title">Project Lvl.1</div>
+                <span class="card-text">HTML | CSS</span>
                 <a
                   target="_blank"
                   href="https://github.com/Danneytrieu/TeaStationDemo.git"
@@ -117,8 +134,8 @@
             <div class="card-container">
               <div class="card-img card-img-3"></div>
               <div class="card-content">
-                <div class="card-title">Project 3</div>
-                <span class="card-text">FIGMA/HTML/CSS/JS/API</span>
+                <div class="card-title">Project Lvl.3</div>
+                <span class="card-text">FIGMA | HTML | CSS | JS | API</span>
                 <a
                   target="_blank"
                   href="https://github.com/Danneytrieu/MealPlanner"
@@ -147,8 +164,8 @@
             <div class="card-container">
               <div class="card-img card-img-2"></div>
               <div class="card-content">
-                <div class="card-title">Project 2</div>
-                <span class="card-text">HTML/CSS/JS</span>
+                <div class="card-title">Project Lvl.2</div>
+                <span class="card-text">HTML | CSS | JS</span>
                 <a
                   target="_blank"
                   href="https://github.com/Danneytrieu/CafeDemo.git"
@@ -169,9 +186,9 @@
             <div class="card-container">
               <div class="card-img card-img-4"></div>
               <div class="card-content">
-                <div class="card-title">Project 4</div>
+                <div class="card-title">Project Lvl.4</div>
                 <span class="card-text"
-                  >FIGMA/REACT(hooks)/CSS.MODULE/FIREBASE
+                  >FIGMA | REACT(hooks) | CSS.MODULE | FIREBASE
                 </span>
                 <a
                   target="_blank"
@@ -197,8 +214,8 @@
         </article>
         <article class="skills-cards">
           <!-- single skill section -->
-          <div class="single-skill">
-            <img class="skill-image" src="./image/design.png" alt="" >
+          <div class="single-skill" >
+            <img data-aos=" class="skill-image" src="./image/design.png" alt="" >
             <div class="skill-content" >
               <h3 >FIGMA | PS | AI | LR</h3>
               <h2>Design</h2>
@@ -210,7 +227,7 @@
           <div class="single-skill">
             <img class="skill-image" src="./image/front-end.png" alt="" >
             <div class="skill-content" >
-              <h3>REACT | JS | CSS | HTML </h3>
+              <h3>MONGO | EXPRESS | REACT | NODE</h3>
               <h2>Code</h2>
               <p>I like to code matters from scratch and love the idea of bringing thoughts to life. Nothing else excites me more than helping client solves real problem and treat the project as my own.</p>
             </div>
@@ -229,21 +246,45 @@
         </article>
       </section>
       <section id="about" data-scroll-section>
-        <aside class="about-left">
-          <img  src="./image/danney1.jpg" alt=""data-scroll data-scroll-speed="-0.5">
+        <aside class="about-left" >
+          <img  src="./image/danney1.jpg" alt="" >
           <div class="circle"></div>
         </aside>
         <aside class="about-right">
-          <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="1" >A FRONT-END DEVELOPER BASED IN DENVER</h1>
+          <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="1" >A FULL-STACK DEVELOPER BASED IN DENVER</h1>
           <p>I'm quietly confident, anxious to learn, love to mentor, naturally curious, and perpetually evolving one skill at a time. </p>
-          <img src="./image/danney2.jpg" alt="" data-scroll data-scroll-speed="1" >
+          <div class="video-thumbnail" data-scroll data-scroll-speed="1" >
+            <img class="thumbnail" src="./image/danney2.jpg" alt="" >
+          </div>
         </aside>
       </section>
       <section id="text" data-scroll-section>
-        <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5">MY EXPERIENCES FROM '15 TO '22</p>
-        <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">BRAND.DESIGN.DEVELOP.CONSULT</p>
+        <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5">MY EXPERIENCES FROM '17 TO '22</p>
+        <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">BRAND.DESIGN.DEVELOPMENT.CONSULT</p>
       </section>
       <section id="exp" data-scroll-section>
+                <!-- SINGLE EXP -->
+        <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol viewBox="0 0 24 24" id="expand-more">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="close">
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+          </svg>
+        </div>
+        <details class=".details">
+          <summary>
+            <div class="exp-textwrap"><h2>(01)</h2>
+            Yuma Way Cannabis Co || Front-end Developer<br>| 2022</div>
+            
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+          </summary>
+          <p>Tasked with managing all websites under the brand, which primarily consist of updating and improving the brand's website. Freedom to design, code, and modify new and existing websites from layout to function to achieve clear specifications from management.</p>
+        </details>
+        <!-- END SINGLE EXP -->
         <!-- SINGLE EXPerience -->
         <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
           <svg xmlns="http://www.w3.org/2000/svg">
@@ -255,40 +296,18 @@
             </symbol>
           </svg>
         </div>
-        <details>
-          <summary>
-            <div class="exp-textwrap"><h2>(01)</h2>
-            Inquivix Digital Marketing <br>| 2019 to 2021</div>
-            
-            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-          </summary>
-          <p>Responsible for connecting with clients to collect information and data, business consultant, perform market research, create content/media, and coordinate with the overseas Korean Influencers to increase the client business's exposure.
-
-</p>
-        </details>
-        <!-- END SINGLE EXP -->
-        <!-- SINGLE EXP -->
-        <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <symbol viewBox="0 0 24 24" id="expand-more">
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
-            </symbol>
-            <symbol viewBox="0 0 24 24" id="close">
-              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
-            </symbol>
-          </svg>
-        </div>
-        <details>
+        <details class=".details">
           <summary>
             <div class="exp-textwrap"><h2>(02)</h2>
-            Sora K-Nail Studio  <br>| 2019 to 2020</div>
+            Paramount+ || UI/UX Developer <br>| 2021</div>
             
             <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
           </summary>
-          <p>My priority was to increase brand awareness through the effective use of social media outlets, creating marketing content and media, and analyzing the business digital marketing plan.</p>
-        </details>
+          <p>Work with other engineers to maintain and evolve our video encoding platform. Modernize, manage and automate our Live and VOD event management system. Build clean and reusable UI components to be used across the application.
+
+</p>
+        </details class=".details">
         <!-- END SINGLE EXP -->
         <!-- SINGLE EXP -->
         <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
@@ -301,15 +320,15 @@
             </symbol>
           </svg>
         </div>
-        <details>
+        <details class=".details">
           <summary>
             <div class="exp-textwrap"><h2>(03)</h2>
-            SuperFit Fitness Center <br>| 2017 to 2018</div>
+            Zhuhai Co. || Full-Stack Developer  <br>| 2019 - 2020</div>
             
             <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
           </summary>
-          <p>Oversee the daily operations such as enforcing policies, procedures, budgeting, building maintenance, human resource, and financial management.</p>
+          <p>Worked closely with designer to continuously test and improve UI/UX elements. Worked with modules like MongoDB and mongoose for database persistence using Node.js to interact with MongoDB.</p>
         </details>
         <!-- END SINGLE EXP -->
         <!-- SINGLE EXP -->
@@ -323,61 +342,45 @@
             </symbol>
           </svg>
         </div>
-        <details>
+        <details class=".details">
           <summary>
             <div class="exp-textwrap"><h2>(04)</h2>
-            The Magic Spa  <br>| 2016 to 2017</div>
+            Inquivix Digital Marketing || UI/UX designer & Developer <br>| 2017 - 2018</div>
             
             <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
             <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
           </summary>
-          <p>Collaborated with staff to maximize customer satisfaction by 90%, streamline procedures and improve bottom-line profitability. Managed schedules for more than 25 full-time therapists and 4 receptionists.</p>
+          <p>Translated the design team's mockups into responsive, interactive features using HTML5, CSS3, and JavaScript. Designed and implemented responsive user interfaces using Material-UI React components and Grid System to fit various screen sizes of web/tablet and mobile using theme-breakpoint and mediaQueries.</p>
         </details>
         <!-- END SINGLE EXP -->
-        <!-- SINGLE EXP -->
-        <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
-          <svg xmlns="http://www.w3.org/2000/svg">
-            <symbol viewBox="0 0 24 24" id="expand-more">
-              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
-            </symbol>
-            <symbol viewBox="0 0 24 24" id="close">
-              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
-            </symbol>
-          </svg>
-        </div>
-        <details>
-          <summary>
-            <div class="exp-textwrap"><h2>(05)</h2>
-            Serenity-Holding, Viet Nam  <br>| 2015 to 2016</div>
-            
-            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-          </summary>
-          <p>Supervises the preparation and execution of an assortment of hotel projects, including: marketing administrations, automation of processes, re-branding and staff training.</p>
-        </details>
-        <!-- END SINGLE EXP -->
+        
+
       </section>
       <section id="contact" data-scroll-section>
         <article class="contact-btn">
           <button class="white-circle">
-            <a href = "mailto: danneytrieu@gmail.com">SAY HELLO</a>
+            <!-- <a class="play-btn">THAT'S ALL !</a> -->
+            <a href="mailto:danneytrieuwork@gmail.com"><Table>CONTACT ME</Table></a>
           </button>
-          <div class="yellow-circle" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3"></div>
+          <button class="yellow-circle " data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">            
+          </button>
         </article>
-        <article class="social">
-          <button class="resume-btn"><a href="https://www.canva.com/design/DAEzat_CoYI/AXM26WbkILLju_vY8nv6gA/view?utm_content=DAEzat_CoYI&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=sharebutton" target="_blank">RESUME</a></button>
+        <!-- Social & resume -->
+        <article class="social" >
+          <button class="resume-btn"><a href="https://docs.google.com/document/d/1JZe-HMEtCslstih8dLTyoy0qGetlaqif/edit?usp=share_link&ouid=114733452238812246917&rtpof=true&sd=true" target="_blank">RESUME</a></button>
           <aside class="social-btns">
-            <a href="https://github.com/Danneytrieu?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="icon-github " href="https://github.com/Danney100" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/danneytrieu" target="_blank"><span class="iconify" data-icon="entypo-social:linkedin-with-circle" style="color: black;" data-width="32"></span></a>
-            <a href="https://www.youtube.com/channel/UCDk-k_VufFvWwc_2SghRHIg" target="_blank"><span class="iconify" data-icon="entypo-social:youtube-with-circle" style="color: black;" data-width="33"></span></a>
-            <a href="https://www.facebook.com/danney.trieu" target="_blank"><span class="iconify" data-icon="akar-icons:facebook-fill" style="color: black;" data-width="30"></span></a>
+            <!-- <a href="https://www.youtube.com/channel/UCDk-k_VufFvWwc_2SghRHIg" target="_blank"><span class="iconify" data-icon="entypo-social:youtube-with-circle" style="color: black;" data-width="33"></span></a> -->
+            <!-- <a href="https://www.facebook.com/danney.trieu" target="_blank"><span class="iconify" data-icon="akar-icons:facebook-fill" style="color: black;" data-width="30"></span></a> -->
           </aside>
           <div class="footer-line"></div>
         </article>
+        <!-- end of social & resume -->
         <p class="credit" >Designed & Built by</p>
       </section>
       <section id="footer" data-scroll-section>
-        <p>DANNEY TRIEU © 2022</p>
+        <p>DANNEY TRIEU © 2021</p>
       </section>
     <!-- script -->
     <script src="./script.js"></script>
