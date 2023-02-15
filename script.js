@@ -1,24 +1,6 @@
 //snooth scroll
 import LocomotiveScroll from "locomotive-scroll";
 
-// const scroll = new LocomotiveScroll({
-//   el: document.querySelector("[data-scroll-container]"),
-//   smooth: true,
-//   lerp: 0.05, // Linear Interpolation, 0 > 1 // Try 0.01
-//   multiplier: 1, // Effect Multiplier
-//   reloadOnContextChange: true,
-//   touchMultiplier: 1,
-//   smoothMobile: 0,
-//   smartphone: {
-//     smooth: !0,
-//     breakpoint: 767,
-//   },
-//   tablet: {
-//     smooth: !1,
-//     breakpoint: 1024,
-//   },
-// });
-
 const scroll = new LocomotiveScroll({
   el: document.querySelector("[data-scroll-container]"),
   smooth: true,
@@ -70,8 +52,10 @@ imagesLoaded(
   }
 );
 
-// loader
-// window.onload = function () {
-//   document.getElementById("loader").style.display = "none";
-//   locoScroll.update();
-// };
+
+//Loader
+const loader = document.getElementById('loader');
+loader.style.display = 'block';
+window.onload = () => {
+  loader.style.display = 'none';
+};

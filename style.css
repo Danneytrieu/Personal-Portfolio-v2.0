@@ -26,6 +26,7 @@
   height: 100%;
   position: relative;
 }
+
 .overlay {
   width: 100%;
   position: absolute;
@@ -215,6 +216,7 @@ width: 105%;}
   background: #f5f5f5;
   transition: ease 0.2s all;
   opacity: 0;
+  text-align: center;
 }
 .card-content:hover {
   opacity: 1;
@@ -521,7 +523,7 @@ details[open] .control-icon-expand {
 }
 .social {
   position: fixed;
-  top: 30%;
+  bottom:-5%;
   left: 5vw;
   display: flex;
   flex-direction: column;
@@ -535,15 +537,15 @@ details[open] .control-icon-expand {
   justify-content: center;
   gap: 10px;
 }
+
 .social-btns i {
   color: rgb(160, 160, 160);
   font-size: 32px;
 }
 
 .footer-line {
-  margin-top: 30px;
   width: 1.3px;
-  height: 200px;
+  height: 100px;
   background-color: rgb(209, 209, 209);
 }
 

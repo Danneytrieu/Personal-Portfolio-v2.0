@@ -12,3 +12,9 @@ To start:
 
 1. parcel index.html
 2. server run on http://localhost:1234
+
+To Build:
+
+1. parcel build index.html
+
+
